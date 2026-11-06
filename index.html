@@ -3,71 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Logan | Game & Encounter Design Portfolio</title>
     <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-primary: #c9d1d9;
+            --text-heading: #f0f6fc;
+            --accent: #58a6ff;
+            --accent-hover: #79c0ff;
+            --border: #30363d;
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
         }
-        header, section {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
+        header {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--text-heading);
+            margin: 0 0 0.5rem 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin: 0;
+        }
+        nav {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: var(--accent);
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin-bottom: 2rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        h1, h2 {
-            color: #2c3e50;
+        h2 {
+            color: var(--text-heading);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 1rem;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            transition: border-color 0.2s;
         }
-        a {
-            color: #3498db;
+        li:hover {
+            border-color: var(--accent);
+        }
+        a.project-link {
+            color: var(--accent);
             text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
         }
-        a:hover {
+        a.project-link:hover {
             text-decoration: underline;
+            color: var(--accent-hover);
+        }
+        .meta-text {
+            font-size: 0.9rem;
+            color: #8b949e;
+            margin-top: 0.3rem;
+            margin-bottom: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #8b949e;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>My Portfolio</h1>
-        <p>Welcome to my personal project hub.</p>
+        <h1>Logan</h1>
+        <p>Aspiring Game & Encounter Designer | Raid & Weapon Mechanics</p>
     </header>
 
-    <!-- OTHER SECTIONS CAN GO HERE (e.g., About, Lua Scripts, Level Design) -->
+    <nav>
+        <a href="#about">About & Motivation</a>
+        <a href="#coddy-projects">Coddy Projects</a>
+        <a href="#goals">Design Focus</a>
+    </nav>
 
-    <!-- ========================================== -->
-    <!-- CODDY.TECH PROJECTS SECTION START         -->
-    <!-- ========================================== -->
-    <section id="coddy-projects">
-        <h2>Coddy.tech Projects</h2>
-        <p>A collection of scripts, exercises, and milestones completed during my learning tracks.</p>
-        
-        <ul id="coddy-list">
-            <!-- PASTE YOUR PROJECT LINKS BELOW THIS LINE -->
-            <!-- Example format: <li><a href="URL_HERE" target="_blank">Project Name / Description</a></li> -->
+    <main>
+        <!-- ABOUT & MOTIVATION SECTION -->
+        <section id="about">
+            <h2>About & Motivation</h2>
+            <p>
+                With over <strong>6,000 hours</strong> logged in <em>Destiny 2</em>, my passion lies deep within cooperative endgame architecture—specifically analyzing, dissecting, and understanding how raid and dungeon encounter mechanics, weapon synergies, and combat loops capture players for years.
+            </p>
+            <p>
+                As *Destiny 2* eventually approaches the conclusion of its live service lifecycle, my ultimate goal is to step into the industry and help build the next generation of cooperative social spaces and high-stakes PvE experiences. I want to create the kind of unforgettable, community-defining moments and cooperative magic that *Destiny* provided for me and millions of others.
+            </p>
+        </section>
+
+        <!-- CODDY.TECH PROJECTS TAB / SECTION -->
+        <section id="coddy-projects">
+            <h2>Coddy.tech Learning Projects</h2>
+            <p>A collection of scripts, programming milestones, and logic foundations built while sharpening my technical scripting capabilities.</p>
             
-            <li><a href="#" target="_blank">Placeholder: Relational & Logical Operators Track</a></li>
-            <li><a href="#" target="_blank">Placeholder: If-Else Conditionals Milestone</a></li>
-
-            <!-- PASTE YOUR PROJECT LINKS ABOVE THIS LINE -->
-        </ul>
-    </section>
-    <!-- ========================================== -->
-    <!-- CODDY.TECH PROJECTS SECTION END           -->
-    <!-- ========================================== -->
-
-</body>
-</html>
+            <ul id="coddy-list">
+                <!-- PASTE YOUR CODDY PROJECT LINKS BELOW THIS LINE -->
