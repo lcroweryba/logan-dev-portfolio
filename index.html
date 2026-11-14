@@ -43,6 +43,7 @@
             border-bottom: 1px solid var(--border);
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 2rem;
             padding: 1rem;
             position: sticky;
@@ -69,6 +70,7 @@
             padding: 2rem;
             margin-bottom: 2rem;
             border-radius: 8px;
+            scroll-margin-top: 4rem;
         }
         h2 {
             color: var(--text-heading);
@@ -140,6 +142,42 @@
             margin-top: 0.3rem;
             margin-bottom: 0;
         }
+        /* CERTIFICATIONS */
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .cert-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .cert-icon {
+            font-size: 1.8rem;
+            line-height: 1;
+        }
+        .cert-issuer {
+            font-size: 0.9rem;
+            color: #8b949e;
+            margin: 0.2rem 0 0 0;
+        }
+        .btn-cert {
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 0.4rem 0.9rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .btn-cert:hover {
+            background-color: var(--accent);
+            color: var(--bg-color);
+        }
         footer {
             text-align: center;
             padding: 2rem;
@@ -159,6 +197,7 @@
     <nav>
         <a href="#about">About & Motivation</a>
         <a href="#coddy-projects">Coddy Projects</a>
+        <a href="#certifications">Certifications</a>
         <a href="#goals">Design Focus</a>
     </nav>
 
@@ -199,6 +238,29 @@
                 </li>
 
                 <!-- PASTE YOUR CODDY PROJECT LINKS ABOVE THIS LINE -->
+            </ul>
+        </section>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <p>Verified certificates earned through Coddy.tech as I build my programming and scripting foundation.</p>
+
+            <ul id="cert-list">
+                <!-- PASTE YOUR CERTIFICATES BELOW THIS LINE (copy a whole <li> block for each new cert) -->
+
+                <li class="cert-item">
+                    <div class="cert-info">
+                        <span class="cert-icon">🏆</span>
+                        <div>
+                            <strong>Lua Programming Certification</strong>
+                            <p class="cert-issuer">Issued by Coddy.tech</p>
+                        </div>
+                    </div>
+                    <a class="btn-cert" href="https://coddy.tech/certifications/bgT4yL-lua-A9ULpi" target="_blank" rel="noopener">View Certificate</a>
+                </li>
+
+                <!-- PASTE YOUR CERTIFICATES ABOVE THIS LINE -->
             </ul>
         </section>
 
